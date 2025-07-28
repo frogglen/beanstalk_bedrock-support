@@ -20,7 +20,7 @@ import org.jspecify.annotations.NullMarked;
 @NullMarked
 public class ProfileDescriptor implements DescribedArgumentParser<Profile> {
 
-    private static final Pattern USERNAME_PATTERN = Pattern.compile("^[a-zA-Z0-9_]{2,16}$");
+    private static final Pattern USERNAME_PATTERN = Pattern.compile("^[a-zA-Z0-9_-]{2,16}$");
 
     private final ProfileService profileService;
 
